@@ -19,10 +19,10 @@ void *sem_waiter (void *arg)
 {
     long num = (long)arg;
 
-    printf ("Thread %d waiting\n", num);
+    printf ("Thread %ld waiting\n", num);
     if (sem_wait (&semaphore) == -1)
         errno_abort ("Wait on semaphore");
-    printf ("Thread %d resuming\n", num);
+    printf ("Thread %ld resuming\n", num);
     return NULL;
 }
 

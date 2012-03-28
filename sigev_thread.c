@@ -48,7 +48,7 @@ timer_thread (union sigval si)
     printf ("Timer (0x%p) %d\n", si.sival_ptr, counter);
 }
 
-main()
+int main()
 {
     int status;
     struct itimerspec ts;
