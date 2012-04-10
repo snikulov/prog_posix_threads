@@ -61,10 +61,10 @@ void *thread_routine (void *arg)
     sleep (2);
     value = (tsd_t*)pthread_getspecific (tsd_key);
     printf ("%s done...\n", value->string);
-    return NULL;    
+    return NULL;
 }
 
-void main (int argc, char *argv[])
+int main (int argc, char *argv[])
 {
     pthread_t thread1, thread2;
     int status;
@@ -78,4 +78,5 @@ void main (int argc, char *argv[])
     if (status != 0)
         err_abort (status, "Create thread 2");
     pthread_exit (NULL);
+    return 0;
 }

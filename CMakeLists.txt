@@ -59,3 +59,6 @@ target_link_libraries(barrier_main ${CMAKE_THREAD_LIBS_INIT})
 add_executable(workq_main workq_main.c workq.c)
 target_link_libraries(workq_main ${CMAKE_THREAD_LIBS_INIT} ${RT_LIB})
 
+# build tsd_once
+add_executable(tsd_once tsd_once.c)
+target_link_libraries(tsd_once ${CMAKE_THREAD_LIBS_INIT})
