@@ -62,3 +62,7 @@ target_link_libraries(workq_main ${CMAKE_THREAD_LIBS_INIT} ${RT_LIB})
 # build tsd_once
 add_executable(tsd_once tsd_once.c)
 target_link_libraries(tsd_once ${CMAKE_THREAD_LIBS_INIT})
+
+# build tsd_destructor.c
+add_executable(tsd_destructor tsd_destructor.c)
+target_link_libraries(tsd_destructor ${CMAKE_THREAD_LIBS_INIT})

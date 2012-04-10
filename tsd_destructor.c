@@ -79,10 +79,10 @@ void *thread_routine (void *arg)
     value->string = (char*)arg;
     printf ("thread \"%s\" starting...\n", value->string);
     sleep (2);
-    return NULL;    
+    return NULL;
 }
 
-void main (int argc, char *argv[])
+int main (int argc, char *argv[])
 {
     pthread_t thread_1, thread_2;
     private_t *value;

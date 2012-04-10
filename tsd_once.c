@@ -78,5 +78,4 @@ int main (int argc, char *argv[])
     if (status != 0)
         err_abort (status, "Create thread 2");
     pthread_exit (NULL);
-    return 0;
 }
